@@ -1,24 +1,12 @@
-# README
+# Twitter Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Basic Twitter clone using Ruby on Rails, just for funsies.
 
-Things you may want to cover:
+Things to refresh/practice:
 
-* Ruby version
+* Building a rails app from scratch (no scaffolding)
 
-* System dependencies
+* Security (bcrypt for password hashing)
 
-* Configuration
+* Use JS to make single page, dynamc app
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
