@@ -19,3 +19,18 @@ micropost_<%= n %>:
   created_at: <%= 42.days.ago %>
   user: john
 <% end %>
+
+anon:
+  content: "I feel so anonymous."
+  created_at: <%= 2.years.ago %>
+  user: jane
+
+stone:
+  content: "Like a rolling stone!"
+  created_at: <%= 3.days.ago %>
+  user: bob
+
+ears:
+  content: "My ears are yuuuuge."
+  created_at: <%= 10.minutes.ago %>
+  user: mickey
