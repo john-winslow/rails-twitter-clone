@@ -1,0 +1,15 @@
+one:
+  follower: john
+  followed: mickey
+
+two:
+  follower: john
+  followed: bob
+
+three:
+  follower: jane
+  followed: john
+
+four:
+  follower: mickey
+  followed: john
