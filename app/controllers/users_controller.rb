@@ -19,9 +19,16 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      @user.send_activation_email
-      flash[:info] = "Please check your email to activate your account."
-      redirect_to root_url
+      @user.activate
+      log_in @user
+      flash[:success] = "Account created!"
+      redirect_to @user
+# Uncomment out these 3 lines below (and delete the above 4 lines) for email
+# account activation.  Disabled because Heroku takes a million years to 
+# complete account signup/activation with this feature.
+#      @user.send_activation_email
+#      flash[:info] = "Please check your email to activate your account."
+#      redirect_to root_url
     else 
       render 'new'
     end
